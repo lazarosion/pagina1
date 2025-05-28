@@ -6,42 +6,27 @@
     <title>FORMULARIO</title>
     <script src="Mati.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
+    <br></br>
     <h2 style="text-align: center;">FORMULARIO: Datos Personales</h2>
-    <br> 
-
-    <form>
+    <br></br>
+    <form id="enviar">
         <div class="container">
         <input type="text" id="nombre" placeholder="Nombre" class="form-control form-control-lg" type="text" placeholder=".form-control-lg" aria-label=".form-control-lg example"> <br><br>
+        <input type="email" class="form-control form-control-lg" id="exampleFormControlInput1" placeholder="Ingrese Mail" aria-label=".form-control-lg"> <br><br>
         <input type="text" id="asunto" placeholder="Asunto" class="form-control form-control-lg" type="text" placeholder=".form-control-lg" aria-label=".form-control-lg example"> <br><br>
-        <input type="text" id="mensaje" placeholder="Mensaje" class="form-control form-control-lg" type="text" placeholder=".form-control-lg" aria-label=".form-control-lg example"> <br><br>
-    </div>
-
-    <div class="container">
-        <label for="exampleFormControlInput1" class="form-label">Email</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ingrese Mail">
-    </div>
-<br>
-    <div class="container">
-        <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label> 
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enviar Mensaje"></textarea>
-    </div>
-<br>
-    <div style="text-align: center;">
-        <title>reCAPTCHA demo: Simple page</title>
-            <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-            <form action="?" method="POST">
-      <div class="g-recaptcha" data-sitekey="6LcWGE0rAAAAAF9HMzpi5hxt--TIN4-FOh0P-duZ"></div>
-    <br/>       
-        <input type="submit" value="Submit">
-    </div>
-<br>
-    <div class="container">
-     <div style="text-align: center;">
-        <button class="Enviar" onclick="send()">Enviar</button>
-     </div>
+        <textarea class="form-control form-control-lg" id="exampleFormControlTextarea1" rows="3" placeholder="Enviar Mensaje"></textarea> <br><br>
+    <div style="text-align: center;"placeholder="Mensaje" class="form-control form-control-lg" type="text" placeholder=".form-control-lg" aria-label=".form-control-lg example"> <br><br>
+      <div class="g-recaptcha" style="text-align: center;"data-sitekey="6LcWGE0rAAAAAF9HMzpi5hxt--TIN4-FOh0P-duZ"></div> <br><br>
+        <div class="container">
+            <div style="text-align: center;">
+                <button class="Enviar" onclick="send()">Enviar</button> <br><br>
+            </div>
+        </div>
     </div>
     </form>
+    <br><br>
 </body>
 </html>
